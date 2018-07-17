@@ -1,0 +1,25 @@
+body{
+    background-color: rgba(233, 239, 243, 0.945);
+}
+
+.eleMargin{
+    margin-bottom: 30px;
+}
+
+
+.dog-card:hover{
+    border:blue 2px solid;
+    
+}
+
+.dog-img{
+    position: relative;
+    top:5px;
+    margin:auto;
+    width:245px;
+    height: 250px;
+}
+
+
+
+

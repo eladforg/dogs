@@ -1,0 +1,32 @@
+
+ <!-- Title -->
+ <main class="container">
+    <h1 class="display-1 eleMargin">Dog Book</h1>
+    
+ <!-- search and update -->
+ <div id="searchUpdate">
+    <div id="searchInput" class="eleMargin">
+        <label for="searchBreed">Search for dog Breed:</label>
+        <input type="text" name="searchBreed" id="searchBreed" ng-model="searchBreed">
+    </div>
+    <div id="updateButton" class="eleMargin">
+        <button id="updateBreed" ng-click="loadPic()">Change Pictures</button>
+    </div>
+</div>
+
+<!-- template for list of dogs -->
+
+<div id="imagesList">
+    <div class="row">
+        <div class="col-md-3 eleMargin" ng-repeat="dogItem in dogsArray | filter:searchBreed">
+            <a ng-href="javascript:void(0)"><div class="card dog-card" ng-click="cardClick(dogItem.dogBreedName)">
+                <img class="card-img-top dog-img" ng-src="{{dogItem.dogBreedImage}}" alt="dog image">
+                <div class="card-body">
+                    <h4 class="card-text">{{dogItem.dogBreedName}}</h4>
+                </div>
+            </div></a>
+        </div>
+        
+    </div>
+
+</div>

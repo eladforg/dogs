@@ -1,0 +1,19 @@
+<!-- List of chosen dog images: -->
+
+
+<div class="container">
+
+<h3 class="eleMargin">Original-size Photos of {{breedName1}}:</h3>
+
+<div class="row">
+    <div class="col-md-3" ng-repeat="dogItem in dogsArray">
+        <div class="card">
+            <!-- <a ng-href="{{dogItem}}" target="_blank"> -->
+            <a ng-href="{{largePic}}" target="_blank"><img class="card-img-top" ng-src="{{dogItem}}" alt="dog pic" ng-click="clickedPic(dogItem)"></a>
+            <!-- <img class="card-img-top" ng-src="{{dogItem.dogBreedImage}}" alt="dog pic"> -->
+        </div>
+    </div>
+
+</div>
+
+</div>
